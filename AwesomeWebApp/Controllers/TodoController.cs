@@ -16,11 +16,11 @@ namespace AwesomeWebApp.Controllers
         {
             // Not threadsafe 
             todos = new List<Todo>();
-            todos.Add(new Todo { Id = 1, AssignedTo = "Mohit", Owner = "Cory", Title = "Clean the toilet", Description = "It's dirty!" });
-            todos.Add(new Todo { Id = 2, AssignedTo = "Yochay", Owner = "Cory", Title = "Clean the floor", Description = "It's dirty!" });
-            todos.Add(new Todo { Id = 3, AssignedTo = "Nir", Owner = "Cory", Title = "Make the bed", Description = "It's messy!" });
-            todos.Add(new Todo { Id = 4, AssignedTo = "Vlad", Owner = "Cory", Title = "Do the dishes", Description = "They're dirty!" });
-            todos.Add(new Todo { Id = 5, AssignedTo = "Stephen", Owner = "Cory", Title = "Cook the food", Description = "I'm hungry!" });
+            todos.Add(new Todo { Id = 1, AssignedTo = "Mohit", Owner = "Cory", Title = "Clean the toilet", Description = "It's dirty!", Complete = false });
+            todos.Add(new Todo { Id = 2, AssignedTo = "Yochay", Owner = "Cory", Title = "Clean the floor", Description = "It's dirty!", Complete = false });
+            todos.Add(new Todo { Id = 3, AssignedTo = "Nir", Owner = "Cory", Title = "Make the bed", Description = "It's messy!", Complete = false });
+            todos.Add(new Todo { Id = 4, AssignedTo = "Vlad", Owner = "Cory", Title = "Do the dishes", Description = "They're dirty!", Complete = false });
+            todos.Add(new Todo { Id = 5, AssignedTo = "Stephen", Owner = "Cory", Title = "Cook the food", Description = "I'm hungry!", Complete = true });
         }
 
         // GET: api/Todo
