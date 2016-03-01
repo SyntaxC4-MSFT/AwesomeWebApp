@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -10,7 +11,7 @@ namespace AwesomeWebApp
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-
+        public static int _PageHitCountOrDidMyAppJustRestered = 0;
         //used to store leaking memory
         public static List<byte[]> _memListLeakGen = new List<byte[]>();
 
