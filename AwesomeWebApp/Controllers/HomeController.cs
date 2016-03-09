@@ -19,12 +19,7 @@ namespace AwesomeWebApp.Controllers
 
         private dynamic getCityName()
         {
-            string cityName = WebConfigurationManager.AppSettings["CITY_NAME"];
-            if(string.IsNullOrEmpty(cityName))
-            {
-                // TODO: what do we do if no config param?
-                throw new NotImplementedException();
-            }
+            string cityName = WebConfigurationManager.AppSettings["CITY_NAME"] ?? "Redmond";
 
             return cityName;
         }
